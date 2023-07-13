@@ -1,34 +1,33 @@
 
 
 
-
+/* display developer name to center and add animation in it */
 .Main_title{
   text-align: center;
   background-color:black;
   
 
 }
+
+/* set a title font-weight, color, and margin*/
   .Main_title h1 {
    
     font-weight: bold;
     color: #e6304e;
     text-align: center;
-  
     margin-top: auto;
-    font-size: 70px;
+    font-size: 90px;
     line-height: 160px;
     margin-left: -20px;
     
     color: transparent;
     -webkit-text-stroke: 1px #fff;
-    background:url(Images/My_Portfolio.jpg);
+    background:url(Images/Online\ Order.png);
     -webkit-background-clip: text;
     background-position: -50px ;
     animation: back 5s linear infinite;
     background-clip: text;
-  
-  -moz-background-clip: text;
-  
+    
   }
   
   
@@ -39,46 +38,52 @@
   
     }
 
+    /* Nav menu start here . set a background color, padding and margin.*/ 
 
-    nav {
+  nav {
       background-color: #333;
       padding: 10px;
       margin-top: -80px;
       margin-bottom: 70px;
-    }
-
-  
-
-
-nav ul {
-
-  list-style: none;
-  
-  margin: 0;
-  padding: 0;
-  
-}
-
+  }
+    /* Set a Nav menu list style as a none.*/
+   nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+  }
+ 
+  /* Display Nav as a inline and set position as a relative.*/
 nav ul li {
   display:inline-block;
   margin-right: 10px;
   position:relative;
 }
 
-
+ /* Set text-color as a white */
 nav ul li a {
   text-decoration: none;
   color: #fff;
   padding: 5px 10px;
 }
 
+/*set a hover effect */
 nav ul li a:hover {
   background-color: #555;
   border-radius: 5px;
 }
 
+/*Set a pseudo elements here*/
+ .bio .name_font::after {
+ content:"Anand Patel.";
+ font-weight: bold;
+ 
+ font-size: 50px;
+ 
+}
 
 
+/* about me section start here*/
 .about_content {
   display: flex;
   flex-direction: column;
@@ -87,34 +92,33 @@ nav ul li a:hover {
   
 }
 
+/*set a image margin here*/
 .about_image {
   margin-bottom: 50px;
-  
 }
 
+
+/* set a image width,height and border here*/
 .about_image img {
-  
- width: 200px;
+  width: 200px;
   height: auto;
   border-radius: 10%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+
+/* Set a text size*/
 .about_text {
  
   font-size: 30px;
-  
 }
 
+/*set a heading margin here*/
 .about_text h2 {
-  font-size:40px;
-  
-  margin-left:35%;
- 
-  
-  
-  
+   margin-left:35%; 
 }
+
+/*set a paragraph font-color, size, and margin */
 
 .about_text p {
   font-size: 25px;
@@ -122,24 +126,21 @@ nav ul li a:hover {
   line-height: 1.5;
   margin-left: 0%;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  
-  
-
 }
 
-.service_grid{
-
+/* Service section start here*/
+.service_grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
 
+/* Set a hover effect here*/
 .service_grid :hover{
   color:rgb(233, 52, 197);
 }
 
-
-
+/* set a border,padding and font-size here*/
 .service_list{
   border: 2px solid orangered;
   padding: 20px;
@@ -149,7 +150,7 @@ nav ul li a:hover {
 }
 
 
-
+/* start a work section here*/
 
 .work_container{
   display: flex;
@@ -157,15 +158,14 @@ nav ul li a:hover {
   justify-content: center;
 }
 
-
+  /*Display a contain as a flex */
 .work-row {
   display: flex;
   width: 100%;
   justify-content: center;
-  
-  
 }
 
+/* Set a border display style,size and padding. put some transition effect here*/
 .work-item {
   flex-basis: calc(30% - 10px);
   border: 1px solid #ccc;
@@ -174,52 +174,52 @@ nav ul li a:hover {
   background-color:#e6304e;
   transition: transform 0.5s ease, 
 }
+/* Set a hover effect on service section*/
 .work-item :hover{
   transform: scale(1.1);
   
 }
+
+/* Set a first image will be larger */
 .work-item.larger {
   flex-basis: calc(75% - 10px);
   background-color: #e6304e;
 }
 
-.work-item a {
-  text-decoration: none;
-
-}
-
-.work-row h4 {
-  font-size: 35px;
-  color: antiquewhite;
-}
 .work-item.larger a {
   text-decoration: none;
   
 }
 
-.work-item img {
- max-width: 100%;
-height: auto;
-
-}
-
-.center{
-  text-align: center;
-  font-size: 40px;
-  background-color: #e6304e;
-  
-  margin-left:auto;
-  margin-right: auto;
-  width: 15%;
-  color: antiquewhite;
-  
-}
 .work-item.larger img {
   max-width: 100%;
   height: auto;
   object-fit: cover;
   margin-bottom: 10px;
 }
+
+
+/* Set text decoration as a none */
+.work-item a {
+  text-decoration: none;
+
+}
+ /*set a text font-size and color as a antiquewhite*/
+.work-row h4 {
+  font-size: 35px;
+  color: antiquewhite;
+}
+
+
+/* Set a image width and height */
+.work-item img {
+ max-width: 100%;
+height: auto;
+
+}
+ 
+
+/*Set a work section span text here*/
 .work-item span {
   display: block;
   font-size: 25px;
@@ -231,14 +231,31 @@ height: auto;
 }
 
 
+/* Set a main headings about, services,work and contact here*/
+.center{
+  text-align: center;
+  font-size: 40px;
+  background-color: #e6304e;
+  
+  margin-left:auto;
+  margin-right: auto;
+  width: 15%;
+  color: antiquewhite;
+  
+}
 
-.page_contact{
+
+
+
+/* contact section start here */
+/* set a */
+.contact_detail{
   font-size:30px;
   padding:5px;
   
 }
 
-.page_contact h2 {
+.contact_detail h2 {
   color: antiquewhite;
   font-size: 35px;
   margin-bottom: 20px;
@@ -246,7 +263,7 @@ height: auto;
   background-color:#e6304e;
 }
 
-.page_contact address a {
+.contact_detail address a {
   display: inline;
   margin-right:35px;
   color: #555;
@@ -254,21 +271,21 @@ height: auto;
   text-align:center;
 }
 
-.page_contact address a:hover {
+.contact_detail address a:hover {
   color:tomato;
 }
 
-.page_contact address a:before {
+.contact_detail address a:before {
 
   color: #555;
   margin-right: 5px;
 }
 
-.page_contact address a:hover:before {
+.contact_detail address a:hover:before {
   color: #333;
 }
 
-
+/* set the media query screen width is equal to or greater than 768 pixels */
 
 @media screen and (min-width: 768px) {
   .about_content {
@@ -321,12 +338,7 @@ height: auto;
  
 }
 
-
-  
-  
- 
-
-  
+  /*  Set the media query  screen width is equal to or less than 768 pixels.*/
 
   @media screen and (max-width: 768px) {
     
@@ -349,7 +361,7 @@ height: auto;
     padding: 3px 8px;
   }
     
-    .center {
+  .center {
       font-size: 30px;
       width: 50%;
     }

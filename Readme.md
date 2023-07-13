@@ -36,7 +36,7 @@ For doing this challenges , first i install the VS Code  developer tool to  edit
  *  After , complete the modification the code ,open the index.html file on your browser ,and  open the developer tools on google chrome , check your websites, is  your website is  responsive as different size,like different devices. 
  * Here is  the image of the  Mockup portfolio file :
 
-![ Mockup_ Image](assets/Images/02-advanced-css-homework-demo.gif )
+![ Mockup_ Image](Assets/Images/02-advanced-css-homework-demo.gif)
 
 
 ## Credits
@@ -44,7 +44,9 @@ For doing this challenges , first i install the VS Code  developer tool to  edit
 
  i watched this video for push the code from vs code to git hub and deployed at live .[https://www.youtube.com/watch?v=Ky_aUrzArt4]
 
- Also,  
+ Also, i learned a pseudo classes and pseudo elements  from a [https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements] .
+
+ i learned a media query using w3 schools:[https://www.w3schools.com/css/css_rwd_mediaqueries.asp]
 
 
 ## License

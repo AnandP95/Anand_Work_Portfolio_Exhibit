@@ -156,6 +156,7 @@ nav ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 50px;
 }
 
   /*Display a contain as a flex */
